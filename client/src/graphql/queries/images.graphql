@@ -1,0 +1,8 @@
+query Images {
+  images {
+    id
+    url
+    description
+    createdAt
+  }
+}

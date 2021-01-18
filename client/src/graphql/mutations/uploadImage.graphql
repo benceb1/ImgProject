@@ -1,0 +1,5 @@
+mutation uploadImage($description: String!, $file: Upload!) {
+  uploadImage(description: $description, file: $file) {
+    url
+  }
+}

@@ -1,0 +1,3 @@
+mutation DeleteImage($imageId: String!) {
+  deleteImage(imageId: $imageId)
+}
