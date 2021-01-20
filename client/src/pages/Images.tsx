@@ -17,6 +17,7 @@ interface ImagesProps {}
 const Wrapper = styled.div`
   margin: 0 auto;
   width: 1000px;
+  min-height: calc(100vh - 9.688rem);
 
   @media (max-width: 1300px) {
     width: 700px;
@@ -30,23 +31,7 @@ const Wrapper = styled.div`
 const TopButtons = styled.div`
   display: flex;
   padding: 1rem;
-  border-bottom: 1px solid #dadce0;
-`;
-
-const UploadButton = styled.button`
-  margin: 1rem;
-  padding: 0.5rem 1.2rem;
-  border: none;
-  background-color: transparent;
-  border-radius: 1rem;
-  background-color: #c4c4c4;
-  transition: 0.5s;
-  &:hover {
-    background-color: #c8e7b3;
-  }
-  &:focus {
-    outline: none;
-  }
+  border-bottom: 1px solid ${({ theme }) => theme.fontColor};
 `;
 
 const ImageCard = styled.div`
@@ -90,6 +75,9 @@ const DetailsContainer = styled.div`
 const DeleteButton = styled.button`
   width: 40px;
   height: 40px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
   margin-left: 2rem;
   margin-right: 1rem;
   font-size: 1.5rem;

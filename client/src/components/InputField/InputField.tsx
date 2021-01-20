@@ -19,6 +19,7 @@ const FormLabel = styled.label`
   top: 0.75rem;
   padding: 0 0.25rem;
   background-color: #fff;
+  border-radius: 10px;
   color: ${({ theme }) => theme.fontColor};
   font-size: 1rem;
   transition: 0.3s;
@@ -33,7 +34,7 @@ const FormInput = styled.input`
   height: 100%;
   font-size: 1rem;
   border: 1px solid ${({ theme }) => theme.fontColor};
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   outline: none;
   padding: 1rem;
   background: none;
@@ -58,7 +59,7 @@ const FormInput = styled.input`
   }
   &:focus {
     background-color: #fff;
-    border-color: rgba(0, 0, 0, 0.25);
+    border-color: ${({ theme }) => theme.fontColor};
     -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
   }

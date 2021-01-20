@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: calc(100vh - 9.688rem);
 `;
 
 const FormContainer = styled.form`
